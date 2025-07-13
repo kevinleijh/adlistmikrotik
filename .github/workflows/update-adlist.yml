@@ -1,0 +1,33 @@
+name: Update Adlist
+
+on:
+  schedule:
+    - cron: '0 0 * * *'    # every day at midnight UTC
+  workflow_dispatch:       # allow manual run
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Fetch upstream adlist
+      run: |
+        curl -s -o upstream.txt https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/pro.txt
+
+    - name: Remove lines that contain whitelist domains
+      run: |
+        cp upstream.txt adlist.txt
+        while read domain; do
+          sed -i "/$domain/d" adlist.txt
+        done < whitelist.txt
+
+    - name: Commit & push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add adlist.txt
+        git commit -m "Update adlist from upstream after removing whitelisted domains" || echo "No changes to commit"
+        git push
