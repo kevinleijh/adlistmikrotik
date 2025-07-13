@@ -17,17 +17,17 @@ jobs:
       run: |
         curl -s -o upstream.txt https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/pro.txt
 
-    - name: Remove lines that contain whitelist domains
+    - name: Filter out whitelisted domains
       run: |
         cp upstream.txt adlist.txt
-        while read domain; do
+        while IFS= read -r domain; do
           sed -i "/$domain/d" adlist.txt
         done < whitelist.txt
 
-    - name: Commit & push changes
+    - name: Commit and push changes
       run: |
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git add adlist.txt
         git commit -m "Update adlist from upstream after removing whitelisted domains" || echo "No changes to commit"
         git push
