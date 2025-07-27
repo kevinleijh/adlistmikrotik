@@ -4,7 +4,7 @@ name: Update Adlist
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * *'  # Every day at midnight UTC
   workflow_dispatch:
 
 jobs:
@@ -19,9 +19,15 @@ jobs:
       run: |
         curl -s -o upstream.txt https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/pro.txt
 
+    - name: Remove upstream header and add custom header
+      run: |
+        echo "#title: Mikrotik blocklist with whitelist" > adlist.txt
+        echo "#description: Hagezi blocklist for Mikrotik with whitelist." >> adlist.txt
+        echo "" >> adlist.txt
+        grep -v '^#' upstream.txt >> adlist.txt
+
     - name: Filter out whitelisted domains
       run: |
-        cp upstream.txt adlist.txt
         while IFS= read -r domain; do
           sed -i "/$domain/d" adlist.txt
         done < whitelist.txt
@@ -31,5 +37,5 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git add adlist.txt
-        git commit -m "Update adlist from upstream after removing whitelisted domains" || echo "No changes to commit"
+        git commit -m "Update adlist with custom Mikrotik header and whitelist applied" || echo "No changes to commit"
         git push
