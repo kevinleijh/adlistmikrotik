@@ -1,9 +1,11 @@
+# Mikrotik Adlist with whitelist
+
 name: Update Adlist
 
 on:
   schedule:
-    - cron: '0 0 * * *'    # every day at midnight UTC
-  workflow_dispatch:       # allow manual run
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
