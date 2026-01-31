@@ -1,12 +1,111 @@
 # ============================================
-# APPLOVIN AD NETWORK BLOCKLIST
-# FOR USE IN HOSTS FILES / DNS BLOCKERS
+# MIKROTIK ADLIST FOR 4 MAJOR AD NETWORKS
+# Google AdMob + Facebook Ads + AppLovin + Unity Ads
+# Format: 0.0.0.0 domain.com
 # ============================================
 
-# Core domains
+# --------------------------------------------------
+# 1. GOOGLE ADMOB DOMAINS
+# --------------------------------------------------
+0.0.0.0 googleadservices.com
+0.0.0.0 adservice.google.com
+0.0.0.0 ads.google.com
+0.0.0.0 ad.google.com
+0.0.0.0 admob.com
+0.0.0.0 ads.admob.com
+0.0.0.0 media.admob.com
+0.0.0.0 mobileads.google.com
+
+# DoubleClick (Google's ad serving)
+0.0.0.0 doubleclick.net
+0.0.0.0 ads.doubleclick.net
+0.0.0.0 ad.doubleclick.net
+0.0.0.0 dart.doubleclick.net
+0.0.0.0 fls.doubleclick.net
+0.0.0.0 stats.g.doubleclick.net
+0.0.0.0 pagead2.googlesyndication.com
+0.0.0.0 pagead.googlesyndication.com
+0.0.0.0 googleads.g.doubleclick.net
+0.0.0.0 pubads.g.doubleclick.net
+0.0.0.0 securepubads.g.doubleclick.net
+0.0.0.0 partnerad.l.doubleclick.net
+
+# Google Ad Manager
+0.0.0.0 googlesyndication.com
+0.0.0.0 googleadapis.l.google.com
+0.0.0.0 googleadsapis.l.google.com
+
+# Google Analytics (often serves ads)
+0.0.0.0 google-analytics.com
+0.0.0.0 analytics.google.com
+0.0.0.0 googletagmanager.com
+0.0.0.0 googletagservices.com
+
+# Google Firebase (AdMob backend)
+0.0.0.0 firebase.google.com
+0.0.0.0 firebaselogging.googleapis.com
+0.0.0.0 firebaseio.com
+
+# --------------------------------------------------
+# 2. FACEBOOK ADS DOMAINS
+# --------------------------------------------------
+0.0.0.0 facebook.com
+0.0.0.0 www.facebook.com
+0.0.0.0 ads.facebook.com
+0.0.0.0 an.facebook.com
+0.0.0.0 api.facebook.com
+0.0.0.0 graph.facebook.com
+0.0.0.0 connect.facebook.com
+0.0.0.0 pixel.facebook.com
+0.0.0.0 tr.facebook.com
+
+# Facebook CDN
+0.0.0.0 fbcdn.net
+0.0.0.0 static.xx.fbcdn.net
+0.0.0.0 scontent.xx.fbcdn.net
+0.0.0.0 external.xx.fbcdn.net
+
+# Facebook Business
+0.0.0.0 business.facebook.com
+0.0.0.0 facebookads.com
+0.0.0.0 adsapi.facebook.com
+0.0.0.0 advertising-api-eu.facebook.com
+
+# Facebook Analytics
+0.0.0.0 facebook.atlassian.net
+0.0.0.0 facebook.br
+0.0.0.0 facebook.cl
+0.0.0.0 facebook.design
+0.0.0.0 facebook.hu
+0.0.0.0 facebook.in
+0.0.0.0 facebook.net
+0.0.0.0 facebook.org
+0.0.0.0 facebook.se
+0.0.0.0 facebookmail.com
+
+# Facebook SDK domains
+0.0.0.0 fb.me
+0.0.0.0 fb.com
+0.0.0.0 fbsbx.com
+0.0.0.0 fbcdn.com
+0.0.0.0 fbwat.ch
+0.0.0.0 fburl.com
+0.0.0.0 fbsupport.com
+
+# Instagram Ads (Facebook owned)
+0.0.0.0 instagram.com
+0.0.0.0 www.instagram.com
+0.0.0.0 cdninstagram.com
+0.0.0.0 graph.instagram.com
+
+# --------------------------------------------------
+# 3. APPLOVIN DOMAINS
+# --------------------------------------------------
 0.0.0.0 applovin.com
 0.0.0.0 applovinads.com
 0.0.0.0 applvn.com
+
+# Core AppLovin domains
 0.0.0.0 ads.applovin.com
 0.0.0.0 d.applovin.com
 0.0.0.0 imp.applovin.com
@@ -15,7 +114,7 @@
 0.0.0.0 ms.applovin.com
 0.0.0.0 vid.applovin.com
 
-# CDN domains
+# AppLovin CDN
 0.0.0.0 cdn.applovin.com
 0.0.0.0 a.applovin.com
 0.0.0.0 assets.applovin.com
@@ -23,16 +122,18 @@
 0.0.0.0 res1.applovin.com
 0.0.0.0 res2.applovin.com
 
-# Analytics/Tracking
+# AppLovin Analytics/Tracking
 0.0.0.0 t.applovin.com
 0.0.0.0 monitoring.applovin.com
 0.0.0.0 telemetry.applovin.com
 0.0.0.0 report.applovin.com
 0.0.0.0 logs.applovin.com
 
-# Additional domains found in apps
+# AppLovin subdomains (a-z)
+0.0.0.0 a.applovin.com
 0.0.0.0 b.applovin.com
 0.0.0.0 c.applovin.com
+0.0.0.0 d.applovin.com
 0.0.0.0 e.applovin.com
 0.0.0.0 f.applovin.com
 0.0.0.0 g.applovin.com
@@ -48,6 +149,7 @@
 0.0.0.0 q.applovin.com
 0.0.0.0 r.applovin.com
 0.0.0.0 s.applovin.com
+0.0.0.0 t.applovin.com
 0.0.0.0 u.applovin.com
 0.0.0.0 v.applovin.com
 0.0.0.0 w.applovin.com
@@ -55,29 +157,8 @@
 0.0.0.0 y.applovin.com
 0.0.0.0 z.applovin.com
 
-# Regional domains
-0.0.0.0 api.applovin.com
-0.0.0.0 api-eu.applovin.com
-0.0.0.0 api-asia.applovin.com
-0.0.0.0 sdk.applovin.com
-0.0.0.0 sdk-eu.applovin.com
-0.0.0.0 sdk-asia.applovin.com
-
-# Video ads
-0.0.0.0 video.applovin.com
-0.0.0.0 vids.applovin.com
-0.0.0.0 vmap.applovin.com
-0.0.0.0 vast.applovin.com
-
-# Mobile-specific
-0.0.0.0 mobile.applovin.com
-0.0.0.0 mraid.applovin.com
-0.0.0.0 native.applovin.com
-0.0.0.0 banner.applovin.com
-0.0.0.0 interstitial.applovin.com
-0.0.0.0 reward.applovin.com
-
-# Subdomains with numbers
+# AppLovin numbered subdomains
+0.0.0.0 0.applovin.com
 0.0.0.0 1.applovin.com
 0.0.0.0 2.applovin.com
 0.0.0.0 3.applovin.com
@@ -87,9 +168,71 @@
 0.0.0.0 7.applovin.com
 0.0.0.0 8.applovin.com
 0.0.0.0 9.applovin.com
-0.0.0.0 0.applovin.com
 
-# Wildcard equivalents (for systems that support)
+# --------------------------------------------------
+# 4. UNITY ADS DOMAINS
+# --------------------------------------------------
+0.0.0.0 unity.com
+0.0.0.0 unity3d.com
+0.0.0.0 unityads.com
+0.0.0.0 unityads.unity3d.com
+0.0.0.0 config.unityads.unity3d.com
+0.0.0.0 webview.unityads.unity3d.com
+
+# Unity Ads serving
+0.0.0.0 ads.unityads.unity3d.com
+0.0.0.0 adserver.unityads.unity3d.com
+0.0.0.0 auction.unityads.unity3d.com
+0.0.0.0 bidder.unityads.unity3d.com
+
+# Unity Ads CDN
+0.0.0.0 cdn.unityads.unity3d.com
+0.0.0.0 assets.unityads.unity3d.com
+0.0.0.0 video.unityads.unity3d.com
+0.0.0.0 img.unityads.unity3d.com
+
+# Unity Ads analytics
+0.0.0.0 analytics.unity3d.com
+0.0.0.0 analytics.cloud.unity3d.com
+0.0.0.0 config.uca.cloud.unity3d.com
+0.0.0.0 perf-events.cloud.unity3d.com
+
+# Unity LevelPlay (mediation)
+0.0.0.0 levelplay.com
+0.0.0.0 api.levelplay.com
+0.0.0.0 sdk.levelplay.com
+
+# Unity services
+0.0.0.0 services.unity.com
+0.0.0.0 ads-service.unityads.unity3d.com
+0.0.0.0 publisher-config.unityads.unity3d.com
+
+# --------------------------------------------------
+# ADDITIONAL RELATED DOMAINS
+# --------------------------------------------------
+# Ad mediation (often used with these networks)
+0.0.0.0 ironsrc.com
+0.0.0.0 supersonic.com
+0.0.0.0 vungle.com
+0.0.0.0 adcolony.com
+0.0.0.0 chartboost.com
+0.0.0.0 fyber.com
+0.0.0.0 tapjoy.com
+
+# Analytics that serve ads
+0.0.0.0 adjust.com
+0.0.0.0 appsflyer.com
+0.0.0.0 kochava.com
+0.0.0.0 branch.io
+0.0.0.0 amplitude.com
+
+# --------------------------------------------------
+# COMMON AD PATTERNS (Wildcard equivalents)
+# --------------------------------------------------
+# Note: MikroTik doesn't support wildcards in DNS static
+# Add these as separate entries if needed:
+# *.googleadservices.com
+# *.doubleclick.net
+# *.facebook.com
 # *.applovin.com
-# *.applovinads.com
-# *.applvn.com
+# *.unity3d.com
