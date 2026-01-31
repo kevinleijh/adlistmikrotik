@@ -236,3 +236,389 @@
 # *.facebook.com
 # *.applovin.com
 # *.unity3d.com
+
+
+# ============================================
+# CHINESE AD NETWORK BLOCKLIST FOR MIKROTIK
+# Format: 0.0.0.0 domain.com
+# ============================================
+
+# --------------------------------------------------
+# 1. TENCENT (腾讯广告) - Largest Chinese ad network
+# --------------------------------------------------
+0.0.0.0 tencent.com
+0.0.0.0 ads.tencent.com
+0.0.0.0 ad.tencent.com
+0.0.0.0 adx.tencent.com
+0.0.0.0 adcdn.tencent.com
+0.0.0.0 ad.qq.com
+0.0.0.0 ads.qq.com
+0.0.0.0 gdt.qq.com
+0.0.0.0 e.qq.com
+0.0.0.0 c.qq.com
+0.0.0.0 miaozhen.com
+0.0.0.0 ad.weixin.qq.com
+0.0.0.0 ad.wechat.com
+0.0.0.0 ad.weishi.qq.com
+0.0.0.0 ads.video.qq.com
+
+# Tencent Analytics/Tracking
+0.0.0.0 pingma.qq.com
+0.0.0.0 btrace.qq.com
+0.0.0.0 trace.qq.com
+0.0.0.0 beacon.qq.com
+0.0.0.0 report.qq.com
+0.0.0.0 monitor.qq.com
+0.0.0.0 tcss.qq.com
+0.0.0.0 bugly.qq.com
+
+# --------------------------------------------------
+# 2. BAIDU (百度联盟) - #2 Chinese ad network
+# --------------------------------------------------
+0.0.0.0 baidu.com
+0.0.0.0 cpro.baidu.com
+0.0.0.0 cpro.baidustatic.com
+0.0.0.0 pos.baidu.com
+0.0.0.0 duclick.baidu.com
+0.0.0.0 eclick.baidu.com
+0.0.0.0 hm.baidu.com
+0.0.0.0 tongji.baidu.com
+0.0.0.0 api.share.baidu.com
+0.0.0.0 mobads.baidu.com
+0.0.0.0 mobads-logs.baidu.com
+0.0.0.0 adscdn.baidu.com
+
+# Baidu Union
+0.0.0.0 union.baidu.com
+0.0.0.0 ssp.baidu.com
+0.0.0.0 adx.baidu.com
+0.0.0.0 adscdn.baidu.com.cn
+0.0.0.0 adx-bid.baidu.com
+
+# --------------------------------------------------
+# 3. ALIBABA (阿里妈妈/阿里联盟) - Taobao/Tmall ads
+# --------------------------------------------------
+0.0.0.0 alibaba.com
+0.0.0.0 alimama.com
+0.0.0.0 tanx.com
+0.0.0.0 alicdn.com
+0.0.0.0 aliyuncs.com
+0.0.0.0 amap.com
+0.0.0.0 taobao.com
+0.0.0.0 tmall.com
+0.0.0.0 1688.com
+0.0.0.0 cainiao.com
+
+# Alibaba Ads
+0.0.0.0 ads.alibaba.com
+0.0.0.0 ad.alibaba.com
+0.0.0.0 adash.man.aliyuncs.com
+0.0.0.0 adashbc.man.aliyuncs.com
+0.0.0.0 adashx.ut.taobao.com
+0.0.0.0 adashxgc.ut.taobao.com
+
+# --------------------------------------------------
+# 4. BYTEDANCE (字节跳动/抖音广告) - TikTok/Douyin
+# --------------------------------------------------
+0.0.0.0 bytedance.com
+0.0.0.0 bytedns.com
+0.0.0.0 bytedns.net
+0.0.0.0 bytecdn.cn
+0.0.0.0 byteimg.com
+0.0.0.0 bytetcc.com
+
+# TikTok/Douyin Ads
+0.0.0.0 douyin.com
+0.0.0.0 ads.douyin.com
+0.0.0.0 ad.douyin.com
+0.0.0.0 toutiao.com
+0.0.0.0 ads.toutiao.com
+0.0.0.0 ad.toutiao.com
+0.0.0.0 snssdk.com
+0.0.0.0 pstatp.com
+0.0.0.0 ixigua.com
+0.0.0.0 hotsoon.com
+0.0.0.0 huoshan.com
+
+# Pangle (穿山甲) - ByteDance's ad network
+0.0.0.0 pangleglobal.com
+0.0.0.0 pangle.io
+0.0.0.0 pangle-b.io
+0.0.0.0 api16-access-gcp.pangle.io
+0.0.0.0 api16-access-sg.pangle.io
+
+# --------------------------------------------------
+# 5. XIAOMI (小米广告)
+# --------------------------------------------------
+0.0.0.0 xiaomi.com
+0.0.0.0 mi.com
+0.0.0.0 ad.xiaomi.com
+0.0.0.0 ads.xiaomi.com
+0.0.0.0 sdkconfig.ad.xiaomi.com
+0.0.0.0 sdkconfig.ad.intl.xiaomi.com
+0.0.0.0 adv.sec.miui.com
+0.0.0.0 tracker.ai.xiaomi.com
+0.0.0.0 cdn.ad.xiaomi.com
+
+# --------------------------------------------------
+# 6. HUAWEI (华为广告)
+# --------------------------------------------------
+0.0.0.0 huawei.com
+0.0.0.0 huaweicloud.com
+0.0.0.0 ads.huawei.com
+0.0.0.0 adx.huawei.com
+0.0.0.0 adx-dra.op.hicloud.com
+0.0.0.0 adx-drcn.op.hicloud.com
+0.0.0.0 logservice.huawei.com
+0.0.0.0 logservice1.huawei.com
+
+# --------------------------------------------------
+# 7. SINA/WEIBO (新浪微博广告)
+# --------------------------------------------------
+0.0.0.0 sina.com.cn
+0.0.0.0 sina.com
+0.0.0.0 weibo.com
+0.0.0.0 ssl.sina.com.cn
+0.0.0.0 ad.sina.com.cn
+0.0.0.0 ads.sina.com
+0.0.0.0 adimg.mobile.sina.cn
+0.0.0.0 adimg.uve.weibo.com
+0.0.0.0 wx.sinaimg.cn
+0.0.0.0 tui.weibo.com
+
+# --------------------------------------------------
+# 8. 360 (奇虎360广告)
+# --------------------------------------------------
+0.0.0.0 360.cn
+0.0.0.0 360.com
+0.0.0.0 so.com
+0.0.0.0 hao.360.cn
+0.0.0.0 huihui.360.cn
+0.0.0.0 ad.360.cn
+0.0.0.0 adm.360.cn
+0.0.0.0 mackeeper.360.cn
+0.0.0.0 shouji.360.cn
+
+# --------------------------------------------------
+# 9. JD.COM (京东广告)
+# --------------------------------------------------
+0.0.0.0 jd.com
+0.0.0.0 jd.hk
+0.0.0.0 jcloud.com
+0.0.0.0 jdpay.com
+0.0.0.0 ads.jd.com
+0.0.0.0 ad.jd.com
+0.0.0.0 cps.jd.com
+0.0.0.0 union.jd.com
+0.0.0.0 jr.jd.com
+
+# --------------------------------------------------
+# 10. KUAIBA (快手广告)
+# --------------------------------------------------
+0.0.0.0 kuaishou.com
+0.0.0.0 kwai.com
+0.0.0.0 gifshow.com
+0.0.0.0 ads.kuaishou.com
+0.0.0.0 ad.kuaishou.com
+0.0.0.0 adlog.kuaishou.com
+0.0.0.0 sf1-ttcdn-tos.pstatp.com
+0.0.0.0 sf3-ttcdn-tos.pstatp.com
+
+# --------------------------------------------------
+# 11. MEITUAN (美团广告)
+# --------------------------------------------------
+0.0.0.0 meituan.com
+0.0.0.0 dianping.com
+0.0.0.0 neixin.cn
+0.0.0.0 ads.meituan.com
+0.0.0.0 ad.meituan.com
+0.0.0.0 ssl.meituan.com
+
+# --------------------------------------------------
+# 12. UCWEB (UC浏览器广告)
+# --------------------------------------------------
+0.0.0.0 uc.cn
+0.0.0.0 ucweb.com
+0.0.0.0 ucloud.cn
+0.0.0.0 ads.uc.cn
+0.0.0.0 ad.uc.cn
+0.0.0.0 adash.uc.cn
+0.0.0.0 track.uc.cn
+
+# --------------------------------------------------
+# 13. CHEETAH MOBILE (猎豹移动)
+# --------------------------------------------------
+0.0.0.0 cmcm.com
+0.0.0.0 cheetahmobile.com
+0.0.0.0 cm.adkmob.com
+0.0.0.0 sdk.cmcm.com
+0.0.0.0 api.cmcm.com
+0.0.0.0 config.cmcm.com
+0.0.0.0 log.cmcm.com
+
+# --------------------------------------------------
+# 14. APUS (雨燕广告)
+# --------------------------------------------------
+0.0.0.0 apusapps.com
+0.0.0.0 apuscn.com
+0.0.0.0 apuslauncher.com
+0.0.0.0 ads.apusapps.com
+0.0.0.0 ad.apusapps.com
+0.0.0.0 log.apusapps.com
+
+# --------------------------------------------------
+# 15. CHINESE ANALYTICS (常搭配广告)
+# --------------------------------------------------
+0.0.0.0 umeng.com
+0.0.0.0 alog.umeng.com
+0.0.0.0 alog.umengcloud.com
+0.0.0.0 alog.umsns.com
+0.0.0.0 au.umeng.com
+0.0.0.0 oc.umeng.com
+
+0.0.0.0 talkingdata.net
+0.0.0.0 tdid.talkingdata.net
+0.0.0.0 tdids.talkingdata.net
+
+0.0.0.0 cnzz.com
+0.0.0.0 s19.cnzz.com
+0.0.0.0 z13.cnzz.com
+0.0.0.0 pcookie.cnzz.com
+
+0.0.0.0 51.la
+0.0.0.0 s.51.la
+0.0.0.0 js.users.51.la
+
+# --------------------------------------------------
+# 16. MOBILE AD NETWORKS (移动广告联盟)
+# --------------------------------------------------
+0.0.0.0 domob.cn
+0.0.0.0 dm.cn
+0.0.0.0 ads.domob.cn
+0.0.0.0 ad.domob.cn
+
+0.0.0.0 adwo.com
+0.0.0.0 ads.adwo.com
+
+0.0.0.0 youmi.net
+0.0.0.0 ads.youmi.net
+
+0.0.0.0 waps.cn
+0.0.0.0 union.waps.cn
+
+0.0.0.0 adview.cn
+0.0.0.0 adx.adview.cn
+
+0.0.0.0 inmobi.cn
+0.0.0.0 w.inmobi.cn
+
+# --------------------------------------------------
+# 17. VIDEO AD NETWORKS (视频广告)
+# --------------------------------------------------
+0.0.0.0 youku.com
+0.0.0.0 tudou.com
+0.0.0.0 iqiyi.com
+0.0.0.0 bilibili.com
+0.0.0.0 acfun.cn
+0.0.0.0 mgtv.com
+
+# Video ad domains
+0.0.0.0 val.atm.youku.com
+0.0.0.0 ad.api.3g.youku.com
+0.0.0.0 ad.m.iqiyi.com
+0.0.0.0 afp.iqiyi.com
+0.0.0.0 c.uaa.iqiyi.com
+
+# --------------------------------------------------
+# 18. SSP/AD EXCHANGES (广告交易平台)
+# --------------------------------------------------
+0.0.0.0 meishu.info
+0.0.0.0 wrating.com
+0.0.0.0 adpush.cn
+0.0.0.0 adpush.com
+0.0.0.0 admaster.com.cn
+0.0.0.0 nearbyme.io
+0.0.0.0 adtrue.com
+0.0.0.0 adnxs.com.cn
+
+# --------------------------------------------------
+# 19. CDNs USED FOR ADS (广告CDN)
+# --------------------------------------------------
+0.0.0.0 cdn.ads.com.cn
+0.0.0.0 cdn.adtrue.com
+0.0.0.0 cdn.admaster.com.cn
+0.0.0.0 img.ads.com.cn
+0.0.0.0 static.ads.com.cn
+0.0.0.0 res.ads.com.cn
+
+# --------------------------------------------------
+# 20. COMMON PATTERNS (常见广告域名模式)
+# --------------------------------------------------
+0.0.0.0 *-ad.qq.com
+0.0.0.0 ad-*.qq.com
+0.0.0.0 *-ad.baidu.com
+0.0.0.0 ad-*.baidu.com
+0.0.0.0 *-ad.alibaba.com
+0.0.0.0 ad-*.alibaba.com
+0.0.0.0 *-ad.tencent.com
+0.0.0.0 ad-*.tencent.com
+
+# --------------------------------------------------
+# 21. APP-SPECIFIC ADS (App内广告)
+# --------------------------------------------------
+0.0.0.0 adcdn.tencent.com
+0.0.0.0 adcdn.qq.com
+0.0.0.0 adcdn.weixin.qq.com
+0.0.0.0 adcdn.weishi.qq.com
+0.0.0.0 adcdn.toutiao.com
+0.0.0.0 adcdn.douyin.com
+0.0.0.0 adcdn.kuaishou.com
+
+# --------------------------------------------------
+# 22. TRACKING/PROFILING (用户画像跟踪)
+# --------------------------------------------------
+0.0.0.0 tagtic.cn
+0.0.0.0 ta.qq.com
+0.0.0.0 tb.qq.com
+0.0.0.0 te.qq.com
+0.0.0.0 tf.qq.com
+0.0.0.0 tg.qq.com
+
+# --------------------------------------------------
+# 23. NATIVE ADS (原生广告)
+# --------------------------------------------------
+0.0.0.0 native-ad.net
+0.0.0.0 nativead.cn
+0.0.0.0 nativead.com.cn
+0.0.0.0 nativeads.cn
+
+# --------------------------------------------------
+# 24. REWARDED ADS (激励广告)
+# --------------------------------------------------
+0.0.0.0 reward-ad.cn
+0.0.0.0 rewardad.cn
+0.0.0.0 rewardads.cn
+0.0.0.0 incentive-ad.cn
+
+# --------------------------------------------------
+# 25. INTERSTITIAL ADS (插屏广告)
+# --------------------------------------------------
+0.0.0.0 interstitial-ad.cn
+0.0.0.0 interstitialad.cn
+0.0.0.0 interstitialads.cn
+
+# --------------------------------------------------
+# 26. BANNER ADS (横幅广告)
+# --------------------------------------------------
+0.0.0.0 banner-ad.cn
+0.0.0.0 bannerad.cn
+0.0.0.0 bannerads.cn
+
+# ============================================
+# IMPORTANT NOTES FOR MIKROTIK
+# ============================================
+# 1. MikroTik doesn't support wildcards (*) in DNS static
+#    Remove lines with * before importing
+# 2. Some domains may break Chinese apps/services
+# 3. Test with individual apps before mass blocking
+# 4. Update list regularly as domains change
