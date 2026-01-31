@@ -1,4 +1,95 @@
-#custom addlist
-0.0.0.0 *.applovin.com
-0.0.0.0 *.applovinads.com
-0.0.0.0 *.applvn.com
+# ============================================
+# APPLOVIN AD NETWORK BLOCKLIST
+# FOR USE IN HOSTS FILES / DNS BLOCKERS
+# ============================================
+
+# Core domains
+0.0.0.0 applovin.com
+0.0.0.0 applovinads.com
+0.0.0.0 applvn.com
+0.0.0.0 ads.applovin.com
+0.0.0.0 d.applovin.com
+0.0.0.0 imp.applovin.com
+0.0.0.0 rt.applovin.com
+0.0.0.0 pdn.applovin.com
+0.0.0.0 ms.applovin.com
+0.0.0.0 vid.applovin.com
+
+# CDN domains
+0.0.0.0 cdn.applovin.com
+0.0.0.0 a.applovin.com
+0.0.0.0 assets.applovin.com
+0.0.0.0 img.applovin.com
+0.0.0.0 res1.applovin.com
+0.0.0.0 res2.applovin.com
+
+# Analytics/Tracking
+0.0.0.0 t.applovin.com
+0.0.0.0 monitoring.applovin.com
+0.0.0.0 telemetry.applovin.com
+0.0.0.0 report.applovin.com
+0.0.0.0 logs.applovin.com
+
+# Additional domains found in apps
+0.0.0.0 b.applovin.com
+0.0.0.0 c.applovin.com
+0.0.0.0 e.applovin.com
+0.0.0.0 f.applovin.com
+0.0.0.0 g.applovin.com
+0.0.0.0 h.applovin.com
+0.0.0.0 i.applovin.com
+0.0.0.0 j.applovin.com
+0.0.0.0 k.applovin.com
+0.0.0.0 l.applovin.com
+0.0.0.0 m.applovin.com
+0.0.0.0 n.applovin.com
+0.0.0.0 o.applovin.com
+0.0.0.0 p.applovin.com
+0.0.0.0 q.applovin.com
+0.0.0.0 r.applovin.com
+0.0.0.0 s.applovin.com
+0.0.0.0 u.applovin.com
+0.0.0.0 v.applovin.com
+0.0.0.0 w.applovin.com
+0.0.0.0 x.applovin.com
+0.0.0.0 y.applovin.com
+0.0.0.0 z.applovin.com
+
+# Regional domains
+0.0.0.0 api.applovin.com
+0.0.0.0 api-eu.applovin.com
+0.0.0.0 api-asia.applovin.com
+0.0.0.0 sdk.applovin.com
+0.0.0.0 sdk-eu.applovin.com
+0.0.0.0 sdk-asia.applovin.com
+
+# Video ads
+0.0.0.0 video.applovin.com
+0.0.0.0 vids.applovin.com
+0.0.0.0 vmap.applovin.com
+0.0.0.0 vast.applovin.com
+
+# Mobile-specific
+0.0.0.0 mobile.applovin.com
+0.0.0.0 mraid.applovin.com
+0.0.0.0 native.applovin.com
+0.0.0.0 banner.applovin.com
+0.0.0.0 interstitial.applovin.com
+0.0.0.0 reward.applovin.com
+
+# Subdomains with numbers
+0.0.0.0 1.applovin.com
+0.0.0.0 2.applovin.com
+0.0.0.0 3.applovin.com
+0.0.0.0 4.applovin.com
+0.0.0.0 5.applovin.com
+0.0.0.0 6.applovin.com
+0.0.0.0 7.applovin.com
+0.0.0.0 8.applovin.com
+0.0.0.0 9.applovin.com
+0.0.0.0 0.applovin.com
+
+# Wildcard equivalents (for systems that support)
+# *.applovin.com
+# *.applovinads.com
+# *.applvn.com
